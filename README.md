@@ -1,10 +1,12 @@
 # Instituto Politécnico Formosa
 
-# React Router Dom v6
+## React Router Dom v6
 
-## Instalar dependendencias con yarn:
+Instalar dependendencias con yarn:
+```bash
 yarn
-
-## Correr en modo desarrollo:
+```
+Correr en modo desarrollo:
+```bash
 yarn dev
-
+```

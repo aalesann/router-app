@@ -6,10 +6,10 @@ import { Navigate } from "react-router-dom";
 export const PublicRoutes = ({ children }) => {
 
   // Acceder a la información del contexto
-  const { isLogged } = useContext(AuthContext)
+  const { state } = useContext(AuthContext)
 
 
-  return ( !isLogged )
+  return ( !state.isLogged )
           ? children
           : <Navigate to={'/'} />
 }

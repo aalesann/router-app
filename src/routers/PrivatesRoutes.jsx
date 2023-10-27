@@ -5,14 +5,14 @@ import { Navigate } from "react-router-dom";
 export const PrivatesRoutes = ({ children }) => {
 
     // Acceder a la información del contexto para saber si el usuario está autenticado
-    const { isLogged } = useContext(AuthContext);
+    const { state } = useContext(AuthContext);
 
 
-  return (!isLogged)
-            ? (
+    return (state.isLogged)
+        ? (
+            children
+        )
+        : (
                 <Navigate to={'/auth/login'} />
-            )
-            : (
-                children
             )
 }

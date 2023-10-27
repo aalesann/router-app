@@ -6,7 +6,7 @@ export const authReducer = (state, action) => {
         case type.LOGIN:
             return {
                 ...action.payload,
-                islogged: true
+                isLogged: true
             }
         case type.LOGOUT:
             return {
